@@ -9,13 +9,7 @@ function addTask() {
     taskText.disabled = true;
     newTask.appendChild(taskText);
 
-    let editButton = document.createElement("button");
-    editButton.textContent = "Edit";
-    editButton.className = "edit";
-    editButton.onclick = function () {
-        taskText.disabled = !taskText.disabled;
-    };
-    newTask.appendChild(editButton);
+
 
     let removeButton = document.createElement("button");
     removeButton.textContent = "Remove";
